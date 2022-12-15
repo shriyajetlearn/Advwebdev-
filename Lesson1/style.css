@@ -1,0 +1,80 @@
+
+:root{
+    /*bg colors */
+    --color-Mob: #b887d4;
+--color-Tab:  #fff1e6;
+--color-Laptop: #52b788;
+--color-Desktop: #bee1e6;
+
+/*Mobile  -> 576px
+Tablet  -> 768px
+Laptop  -> 992px
+Desktop -> 1200px */
+
+}
+
+
+*{
+    margin : 0px;
+    padding : 0px;
+    box-sizing : border-box; 
+      }
+  
+    body{
+      font-size : 35px;
+      font-family : sans-serif;
+    }
+  
+    .container{
+        display : grid;
+        place-items : center;
+      
+        background-color: white ;
+        height : 100vh;
+  }
+  
+  .text{
+    font-size: 1.5rem;
+   }
+
+
+  #size {
+    position: absolute;
+  
+    /* positioning screen size below our main text */
+    top : 60%;
+    left: 50%;
+  
+    transform: translateX(-50%);
+  
+    color : red;
+    font-size : 35px;
+  }
+
+  @media screen and (min-width : 576px){
+    .container{
+      background-color: var(--color-Mob);
+    }
+   
+  }
+    @media screen and (min-width : 768px){
+        .container{
+          background-color: var(--color-Tab);
+        }
+       
+    }
+        @media screen and (min-width : 992px){
+            .container{
+              background-color: var(--color-Laptop);
+            }
+          
+        }
+
+            @media screen and (min-width : 1200px){
+                .container{
+                  background-color: var(--color-Desktop);
+                }
+             
+}
+
+

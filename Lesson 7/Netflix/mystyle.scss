@@ -1,0 +1,53 @@
+
+
+@import './button';
+@import './variables';
+
+body{
+    background-color:$bgcolor;
+}
+
+.top {
+    background-image: $bg-gradient;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    font-family:$fonts;
+    span {
+        display: $display_i;
+    }
+}
+
+table{
+    width:100%;
+    background-color: $bgcolor;
+    td{
+        width:50%;
+    }
+    hr{
+        height:6px;
+        background-color:#222222; 
+        border-width:0;
+    }
+}
+
+
+#head {
+  @include padding(90%,0%);
+}
+
+.center {
+  margin-top: 15%;
+  margin-left: 10%;
+  margin-bottom: 15%;
+  display: $display_ib;
+  color: $textcolor;  
+  
+    span{
+        font-size: 60px;
+    }
+  
+}
+
+
+
